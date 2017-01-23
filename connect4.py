@@ -8,7 +8,7 @@ max_slots = (max_row + 1) * (max_column + 1)
 empty_character = "x"
 red_character = "R"
 yellow_character = "Y"
-max_depth = 6
+max_depth = 7
 
 class Position:
     def __init__(self):
@@ -124,7 +124,7 @@ is_game_over = False
 
 move_number = 1
 while move_number <= 42:
-    print(move_number)
+    print("Ply: " + str(move_number))
 
     outer_move = get_best_move(current_position, 0)
     apply_move(current_position, outer_move)
