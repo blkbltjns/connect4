@@ -115,8 +115,6 @@ def get_best_move(position, depth):
 
     return best_move
 
-
-
 current_position = Position()
 print_board_position(current_position)
 
